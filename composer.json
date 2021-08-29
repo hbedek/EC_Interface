@@ -1,9 +1,9 @@
   
 {
-    "name": "hbedek/EC_Interface",
+    "name": "hbedek/ec_interface",
     "type": "library",
     "description": "Interface to connect to Electricity Cost",
-    "homepage": "https://github.com/hbedek/EC_Interface",
+    "homepage": "https://github.com/hbedek/ec_interface",
     "license": "MIT",
     "authors": [
         {
