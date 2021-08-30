@@ -1,9 +1,9 @@
   
 {
-    "name": "hbedek/ec_interface",
+    "name": "hbedek/ec-interface",
     "type": "library",
     "description": "Interface to connect to Electricity Cost",
-    "homepage": "https://github.com/hbedek/ec_interface",
+    "homepage": "https://github.com/hbedek/ec-interface",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
         }
     ],
     "autoload": {
-        "psr-4": { "Hbedek\\EC_Interface\\": "Interface/" }
+        "psr-4": { "hbedek\\ec-interface\\": "Interface/" }
     },
     "prefer-stable": true
 }
