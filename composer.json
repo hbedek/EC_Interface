@@ -12,8 +12,14 @@
             "role": "Developer"
         }
     ],
+    "require": {
+        "php": ">=5.3.0"
+    },
     "autoload": {
-        "psr-4": { "hbedek\\ec-interface\\": "Interface/" }
-    }
-    
+        "psr-0": {
+            "ECInterfaceImpl": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace ECInterfaceImpl;
+
 class ECInterfaceImpl
 {
     protected $version = 2.0;
