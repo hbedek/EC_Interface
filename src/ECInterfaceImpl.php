@@ -23,11 +23,11 @@ class ECInterfaceImpl
             return '<label>Le plugin Electricity Cost n\'est pas installé sur votre Jeedom</label>';
         }
     }
-    public function createECCmds($context)
+    public function createECCmds($context, $needRefreshCmd)
     {
         if ($this->isPluginInstalled()) {
             include_once '/var/www/html/plugins/ElectricityCost/core/class/Utils/ECInterface.php';
-            ECInterface::createECCmds($context, true);
+            ECInterface::createECCmds($context, $needRefreshCmd);
         }
     }
 
