@@ -3,7 +3,7 @@
 
 class ECInterfaceImpl
 {
-    protected $version = 2.0;
+    protected $version = 3.0;
     public static function isPluginInstalled()
     {
         $filename = '/var/www/html/plugins/ElectricityCost/core/class/Utils/ECInterface.php';
