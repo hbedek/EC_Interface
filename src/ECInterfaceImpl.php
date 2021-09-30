@@ -72,4 +72,10 @@ class ECInterfaceImpl
             ECInterface::updateTotalPriceForConsumption($context, $consumptionCdmName, $totalCostCmdName);
         }
     }
+
+    public function resetHistoryForContext($context) {
+        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
+            ECInterface::resetHistoryForContext($context);
+        }
+    }
 }
