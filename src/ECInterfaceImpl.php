@@ -73,9 +73,34 @@ class ECInterfaceImpl
         }
     }
 
-    public function resetHistoryForContext($context) {
+    public function resetHistoryForContext($context)
+    {
         if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
             ECInterface::resetHistoryForContext($context);
         }
+    }
+
+    public function isHCContract($context)
+    {
+        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
+            return ECInterface::isHCContract($context);
+        }
+        return false;
+    }
+
+    public function getNextHC($context)
+    {
+        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
+            return ECInterface::getNextHC($context);
+        }
+        return null;
+    }
+
+    public function isHC($context)
+    {
+        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
+            return ECInterface::isHC($context);
+        }
+        return null;
     }
 }
