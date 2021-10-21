@@ -88,19 +88,9 @@ class ECInterfaceImpl
         return false;
     }
 
-    public function getNextHC($context)
-    {
+    public function refreshCronEqs($context) {
         if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
-            return ECInterface::getNextHC($context);
+            ElectricityCost::refreshCronEqs($context);
         }
-        return null;
-    }
-
-    public function isHC($context)
-    {
-        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
-            return ECInterface::isHC($context);
-        }
-        return null;
     }
 }
