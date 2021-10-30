@@ -80,17 +80,9 @@ class ECInterfaceImpl
         }
     }
 
-    public function isHCContract($context)
-    {
-        if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
-            return ECInterface::isHCContract($context);
-        }
-        return false;
-    }
-
     public function refreshCronEqs($context) {
         if ($this->isPluginInstalled() && $this->verifyVersionCompatibility()) {
-            ElectricityCost::refreshCronEqs($context);
+            ECInterface::refreshCronEqs($context);
         }
     }
 }
